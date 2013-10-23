@@ -9,7 +9,7 @@ int main() {
     int x;
     cout << "Enter the required number: ";
     cin >> x;
-    if ( ! (x == lostNumbers[i]) ) {
+    if ( x != lostNumbers[i] ) {
       exit(1);  
     } else if (i == 5) {
       main();
