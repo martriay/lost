@@ -3,7 +3,7 @@
  
 int main() {
   using namespace std;
-  int lostNumbers[6] = {4,8,15,16,23,42};
+  int lostNumbers[] = {4,8,15,16,23,42};
 
   for (int i = 0; i < 6; i++) {
     int x;
