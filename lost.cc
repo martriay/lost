@@ -3,16 +3,19 @@
  
 int main() {
   using namespace std;
-  int lostNumbers[] = {4,8,15,16,23,42};
+  int numbers[] = {4, 8, 15, 16, 23, 42}
+    , in = 0
+    , i = 0
+    ;
 
-  for (int i = 0; i < 6; i++) {
-    int x;
-    cout << "Enter the required number: ";
-    cin >> x;
-    if ( x != lostNumbers[i] ) {
-      exit(1);  
-    } else if (i == 5) {
-      main();
+  while (true) {
+    cout << "¬ Enter the number: ";
+    cin >> in;
+
+    if (in != numbers[i++ % 6]) {
+      exit(1);
     }
+
   }
+
 }
